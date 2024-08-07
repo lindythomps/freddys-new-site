@@ -1,0 +1,91 @@
+body {
+    font-size: 1.6rem;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+header {
+    background-color: white;
+}
+
+.site-id {
+    margin: 0 auto;
+    width: 35%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {  
+    text-align: center;
+    font-family: 'rahayuregular';
+    color: var(--charcoal);
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+.logo img:last-of-type {
+    display: none;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    width: 5rem;
+    display: block;
+}
+
+header nav {
+    position: absolute;
+    top: 6rem; /* the height of the closed header */
+    left: 0;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    background-color: white;
+    }
+
+.show-nav {
+    max-height: 100vh;
+    z-index: 50;
+    }
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: black;
+    z-index: 100;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner p {
+    position: absolute;
+    top: 3rem;
+    background-color: hwb(40 47% 32% / 0.7);
+}
+
+/* main layout */
+
+
+
+
