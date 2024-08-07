@@ -18,6 +18,14 @@ body {
     align-items: center;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 /* header */
 header {
     background-color: white;
@@ -33,7 +41,7 @@ header {
 
 .logo {  
     text-align: center;
-    font-family: 'rahayuregular';
+    /* font-family: 'rahayuregular'; */
     color: var(--charcoal);
     font-size: 1.75rem;
     text-decoration: none;
@@ -86,6 +94,38 @@ nav ul li a {
 
 /* main layout */
 
+.proposal > div {
+    bottom: 52%;
+}
 
+.stories,
+.spill > div {
+    flex-direction: row;
+}
 
+.spill .flex-container div {
+    width: 50%;
+}
 
+.rocky-mountain-stamp {
+    float: left;
+    width: 12rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    shape-outside: margin-box;
+}
+
+.features {
+    margin-bottom: 3rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
