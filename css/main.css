@@ -1,18 +1,5 @@
 .peach {
-    background-color: peachpuff;
-}
-
-.md-blue {
-    background-color: cornflowerblue;
-}
-
-.dk-brown  {
-    background-color: saddlebrown;
-}
-
-.orange {
-    background-color: peru;
-}
+    background-color: peachpuff;} .md-blue {background-color: cornflowerblue;} .dk-brown  {background-color: saddlebrown;} .orange {background-color: peru;}
 
 .lt-blue {
     background-color: lightskyblue;
@@ -20,6 +7,10 @@
 
 .sage {
     background-color: seagreen;
+}
+
+.lt-sage {
+    background-color: slategray;
 }
 
 .yellow {
@@ -32,62 +23,124 @@
 
 /* grid block sizing */
 
+.faq-h2 {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
 .flex {
     display: flex;
 }
 
 .grid-block {
-    width: 30rem;
+    width: 25%;
     height: 20rem;
 }
 
 .half-block {
-    width: 10rem;
+    width: 12.5%;
     height: 20rem;
 }
 
-.peach {
+.block-grid .peach {
     margin-left: 10rem;
 }
 
+.b-1,
+.b-2,
 .b-3,
-.b-4,
-.b-5,
-.b-6 {
-    display: flex;
+.b-4 {
+    display: none;
 }
 
 .width-100 {
     width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+.directions .lt-sage,
+.directions .peach,
+.directions .lt-blue {
+    position: absolute;
+    right: 0;
+    height: 10rem;
+    z-index: -1;
+}
+
+.directions .lt-sage {
+    width: 10rem;
+}
+
+.directions .peach {
+    margin-right: 10rem;
+    top: 10rem;
+    width: 15rem;
+}
+
+.directions .lt-blue {
+    margin-top: 20rem;
+    width: 10rem;
+}
+
+.directions h4 {
+    padding-top: 10rem;
+}
+
+.policies .grid-block {
+    display: none;
+}
+
+
+@media screen and (min-width: 1000px) {
     .block-grid {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .seating {
         position: absolute;
-        top: 0;
+        top: 18rem;
+        right: 5rem;
     }
 
     .b-1 {
         display: flex;
         flex-wrap: wrap;
-        width: 60rem;
+        /* width: 50%; */
         height: 60rem;
     }
-
+    
     .b-2 {
         display: flex;
         flex-wrap: wrap;
-        width: 40rem;
+        /* width: 40rem; */
         height: 40rem;
         margin-top: 20rem;
     }
-
+    
     .b-3 {
+        display: flex;
         margin-left: 40rem;
+    }
+
+    .policies .grid-block {
+        display: block;
+        position: absolute;
+    }
+
+    .alcohol,
+    .music {
+        margin-top: 5rem;
+        padding-left: 40%;
+    }
+
+    .candles {
+        text-align: right;
+        padding-right: 10%;
+    }
+
+    .vendors {
+        padding-right: 65%;
     }
 }
