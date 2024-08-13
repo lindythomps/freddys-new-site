@@ -1,14 +1,14 @@
-.peach {background-color: peachpuff;} 
-.lt-pink {background-color: pink;}
-.md-blue {background-color: cornflowerblue;} 
-.dk-brown  {background-color: saddlebrown;} 
-.orange {background-color: peru;}
-.lt-blue {background-color: lightskyblue;}
-.sage {background-color: seagreen;}
-.lt-sage {background-color: slategray;}
-.yellow {background-color: yellow;}
-.magenta {background-color: magenta;}
-.mint {background-color: lightgreen;}
+.peach {background-color: #ebbd9f;} 
+.lt-pink {background-color: #efcbb3;}
+.md-blue {background-color: #6c91b4;} 
+.dk-brown  {background-color: #431f07;} 
+.orange {background-color: #ab5821;}
+.lt-blue {background-color: #afb8c5;}
+.sage {background-color: #617263;}
+.lt-sage {background-color: #939994;}
+.yellow {background-color: #cccc66;}
+.magenta {background-color: #b069ad;}
+.mint {background-color: #c6d9c8;}
 .grey {background-color: grey;}
 
 /* grid block sizing */
@@ -189,6 +189,11 @@
     grid-row: 7 / 9;
     grid-column: 5 / 11;
     background-color: black;
+}
+
+.floor-plan,
+.map {
+    padding: 2rem;
 }
 
 /* booking specifics */
